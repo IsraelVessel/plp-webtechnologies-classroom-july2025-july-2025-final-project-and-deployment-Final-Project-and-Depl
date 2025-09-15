@@ -1,0 +1,170 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #182945; /* Yankees Blue */
+  color: #ECE5DB;       /* Soft off-white */
+}
+
+header {
+  background-color: #47352D; /* Old Burgundy */
+  color: #F0E6D2;           /* Light cream */
+  padding: 15px 0;
+  box-shadow: 0 2px 10px rgba(71, 53, 45, 0.8);
+}
+
+.navbar {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 28px;
+  font-weight: 700;
+  color: #A58A77; /* Beaver */
+  cursor: default;
+  letter-spacing: 1.4px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 28px;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-links li a {
+  color: #ECE5DB;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 16px;
+  transition: color 0.3s ease;
+  letter-spacing: 0.7px;
+}
+
+.nav-links li a:hover {
+  color: #936F5D; /* Dark Chestnut */
+  text-shadow: 0 0 6px #936F5D;
+}
+
+.menu-toggle {
+  display: none;
+  font-size: 32px;
+  cursor: pointer;
+  color: #936F5D;
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+    flex-direction: column;
+    background-color: #47352D; /* Old Burgundy */
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 220px;
+    border-radius: 0 0 0 10px;
+    display: none;
+    padding: 15px 0;
+    box-shadow: 0 5px 18px rgba(71, 53, 45, 0.7);
+  }
+  .nav-links.active {
+    display: flex;
+  }
+  .menu-toggle {
+    display: block;
+  }
+}
+
+main {
+  max-width: 960px;
+  margin: 30px auto;
+  padding: 0 25px;
+  background-color: #3C4B5E; /* Police Blue */
+  border-radius: 10px;
+  box-shadow: 0 7px 25px rgba(56, 75, 94, 0.8);
+  color: #ECE5DB;
+}
+
+footer {
+  text-align: center;
+  background-color: #47352D; /* Old Burgundy */
+  color: #A58A77; /* Beaver */
+  padding: 14px 0;
+  letter-spacing: 0.5px;
+  font-size: 14px;
+}
+
+.welcome, .about-content, .services-content, .gallery-content, .contact-content {
+  background-color: #936F5D; /* Dark Chestnut */
+  border-radius: 12px;
+  padding: 32px 28px;
+  margin-bottom: 25px;
+  box-shadow: 0 6px 20px rgba(147, 111, 93, 0.7);
+  color: #ECE5DB;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 25px;
+}
+
+.gallery-img {
+  width: 100%;
+  border-radius: 12px;
+  border: 3px solid #A58A77; /* Beaver */
+  background-color: #182945; /* Yankees Blue */
+  box-shadow: 0 0 15px #A58A77;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery-img:hover {
+  transform: scale(1.07);
+  box-shadow: 0 0 25px #936F5D; /* Dark Chestnut */
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+input, textarea, button {
+  background-color: #47352D; /* Old Burgundy */
+  border: 2px solid #A58A77; /* Beaver */
+  color: #ECE5DB;
+  border-radius: 10px;
+  padding: 14px 18px;
+  font-size: 16px;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input:focus, textarea:focus {
+  outline: none;
+  border-color: #936F5D; /* Dark Chestnut */
+  box-shadow: 0 0 12px #936F5D;
+  background-color: #5E4C44;
+}
+
+button {
+  background-color: #A58A77; /* Beaver */
+  color: #182945; /* Yankees Blue */
+  font-weight: 700;
+  border: none;
+  cursor: pointer;
+  letter-spacing: 0.8px;
+  box-shadow: 0 0 20px #936F5D;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+button:hover {
+  background-color: #936F5D; /* Dark Chestnut */
+  box-shadow: 0 0 30px #47352D;
+  color: #182945;
+}
