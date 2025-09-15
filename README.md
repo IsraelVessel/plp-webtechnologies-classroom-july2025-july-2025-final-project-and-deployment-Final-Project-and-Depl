@@ -12,7 +12,7 @@ Pages include Home, About, Services, Contact, and Gallery.
 - /images: Images used in the site
 
 ## Live URL
-[Add the live URL here after deployment]
+https://israelvessel.github.io/plp-webtechnologies-classroom-july2025-july-2025-final-project-and-deployment-Final-Project-and-Depl/contact.html
 
 ## Purpose
 Portfolio or product showcase website demonstrating responsive design, user-friendly navigation, and dynamic content.
